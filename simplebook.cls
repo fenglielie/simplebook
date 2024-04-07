@@ -267,6 +267,7 @@
     \newcommand{\notename}{Note}
     \renewcommand*{\proofname}{\normalfont\bfseries\color{ecolor} Proof}
 
+    \newcommand{\notename}{Note}
     \newcommand{\definitionname}{Definition}
     \newcommand{\theoremname}{Theorem}
     \newcommand{\lemmaname}{Lemma}
