@@ -409,7 +409,9 @@
 \renewcommand{\theexam}{\thechapter.\arabic{exam}}
 \newenvironment{example}[1][]{
     \refstepcounter{exam}
-    \par\noindent\textbf{\color{main}{\examplename} \theexam #1 }\rmfamily}{
+    \par\noindent\textbf{\color{main}{\examplename} \theexam
+    \ifblank{#1}{}{ (#1)}}
+    \rmfamily}{
     \par\ignorespacesafterend}
 
 %% 带编号的problem
@@ -418,7 +420,9 @@
 \renewcommand{\theprob}{\thechapter.\arabic{prob}}
 \newenvironment{problem}[1][]{
     \refstepcounter{prob}
-    \par\noindent\textbf{\color{main}{\problemname} \theprob #1 }\rmfamily}{
+    \par\noindent\textbf{\color{main}{\problemname} \theprob
+    \ifblank{#1}{}{ (#1)}}
+    \rmfamily}{
     \par\ignorespacesafterend}
 
 %% 带编号的exercise
@@ -427,7 +431,9 @@
 \renewcommand{\theexer}{\thechapter.\arabic{exer}}
 \newenvironment{exercise}[1][]{
     \refstepcounter{exer}
-    \par\noindent\textbf{\color{main}{\exercisename} \theexer #1 }\rmfamily}{
+    \par\noindent\textbf{\color{main}{\exercisename} \theexer #1
+    \ifblank{#1}{}{ (#1)}}
+    \rmfamily}{
     \par\ignorespacesafterend}
 
 % 不带编号的note，remark，solution
