@@ -1,0 +1,57 @@
+\documentclass[lang=cn,10pt,cnfont=NotoCJK]{simplebook}
+
+\usepackage{hologo}
+\usepackage{listings}
+
+\renewcommand{\ttdefault}{cmtt}
+\lstdefinestyle{mystyle}{
+basicstyle=%
+    \ttfamily
+    \lst@ifdisplaystyle\small\fi
+}
+
+\lstset{basicstyle=\ttfamily,style=mystyle,breaklines=true}
+
+\definecolor{lightgrey}{rgb}{0.9,0.9,0.9}
+\definecolor{frenchplum}{RGB}{190,20,83}
+\lstset{language=[LaTeX]TeX,
+texcsstyle=*\color{winered},
+numbers=none,
+mathescape=false,
+breaklines=true,
+keywordstyle=\color{winered},
+commentstyle=\color{gray},
+emph={simplepaper,fontenc,fontspec,cnfont,xeCJK,citestyle,FiraMono,xunicode,figure,fig,image,img,table,itemize,enumerate,ctex,microtype,description,times,booktabs,tabular,PDFLaTeX,XeLaTeX,type1cm,BibTeX,color,mode,lang,amsthm,tcolorbox,titlestyle,cite,ctex,listings,base,math,scheme,toc,esint,chinesefont,amsmath,bibstyle,natbib,pgfornament,addbibresource,printbibliography},
+emphstyle={\color{frenchplum}},
+morekeywords={DeclareSymbolFont,SetSymbolFont,toprule,midrule,bottomrule,institute,version,includegraphics,setmainfont,setsansfont,setmonofont ,setCJKmainfont,setCJKsansfont,setCJKmonofont,RequirePackage,figref,tabref,email,maketitle,keywords,definecolor,bottominfo,logo,cover,subtitle,appendix,chapter,section,hypersetup,mainmatter,frontmatter,tableofcontents,heiti,kaishu,lstset,pagecolor,zhnumber,part,equote,bioinfo,datechange,listofchange,lvert,lastpage,songti,heiti,fangsong,setCJKfamilyfont,textbf,thmcnt,colorlet,usesamecnt},
+frame=single,
+tabsize=2,
+rulecolor=\color{ecolor},
+framerule=0.2pt,
+columns=flexible,
+% backgroundcolor=\color{lightgrey}
+}
+\renewcommand\ttdefault{lmtt}
+
+\title{Title}
+\subtitle{SubTitle}
+
+\author{Author}
+% \institute{None}
+\date{\today}
+\bottominfo{}
+\cover{legao.jpg}
+%\logo{logo-blue.png}
+
+\setcounter{tocdepth}{2}
+
+\RequirePackage[backend=biber,citestyle=numeric-comp,bibstyle=numeric]{biblatex}
+% \addbibresource[location=local]{reference.bib}
+
+\begin{document}
+
+\maketitle
+
+
+
+\end{document}
